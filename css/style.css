@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 100px;
+}
+header{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #1e172f;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    height: 45px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+header button{
+    color: white;
+    background-image: linear-gradient(
+        90deg
+        ,#8f33ed 0,#834fff 25%,#5c78ff 50%,#267cfd 75%,#4a66ff 100%);
+}
+.enlaces{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Propiedades para el banner izquierdo */
+.bannerIz{
+    background-color: #2e2550;
+    height: 770px;
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contBanner{
+    width: 70%;
+    height: auto;
+    padding-right: 50px;
+}
+.contBanner h1{
+    font-size: 120px;
+}
+.contBanner p{
+    font-size: 25px;
+}
+.botonesBanner{
+    width: 326px;
+    border-radius: 3px;
+    display: flex;
+    border: solid 1px gray;
+}
+.botonesBanner button{
+    width: auto;
+    padding: 10px 27px;
+    margin: 5px;
+}
+#buttonBannerIz{
+    background-color: white;
+}
+#buttonBannerIz p{
+    font-size: inherit;
+    background: linear-gradient(90deg, #eb66ab, #f41586);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+#buttonBannerDr{
+    background-color: #2e2550;
+    border: solid 2px white;
+    color: white;
+}
+
+
+/* Propiedades para el banner derecho */
+.bannerDr{
+    width: 50%;
+    height: 770px;
+    background: url(../images/hojasFondo.jfif);
+    background-size: 1600px;
+    background-position-x: 70%;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerDr img{
+    width: 230px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+
+/* Sección del fonctionnalités */
+.fonctionnalites{
+    height: auto;
+    padding: 90px 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    background-color: #f1f2f7;
+}
+svg {
+    vertical-align: middle;
+    color: #ef2a8e;
+}
+.contFonctio{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+.contFonctio img{
+    width: 630px;
+    height: 390px;
+}
+.fonctionnalites h1{
+    font-size: 70px;
+    text-align: center;
+    color: #f13796;
+}
+.textFonctio{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 15px;
+}
+.textFonctio h2{
+    font-size: 50px;
+    font-weight: 200;
+    color: #c81972;
+    margin-bottom: 20px;
+}
+.textFonctio h3{
+    font-size: 30px;
+    color: #f13796;
+}
+.textFonctio p{
+    font-size: 22px;
+}
+.textFonctio a{
+    color: black;
+    font-size: 22px;
+}
+
+/* Sección para los planes y precios */
+.plansPricing{
+    height: auto;
+    padding: 60px 120px;
+    background-color: #1e172f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.plansPricingText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 300px;
+    gap: 60px;
+}
+.plansPricingText p{
+    font-size: 22px;
+}
+.plansPricingText h1{
+    font-size: 70px;
+}
+
+/* Tarjetas */
+.plansPricingBoxes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+.tarjeta{
+    width: 22%;
+    background-color: white;
+    height: auto;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    border-radius: 8px;
+}
+.tarjeta img{
+    width: 60px;
+}
+.tarjeta h1{
+    color: #f41486;
+    font-size: 30px;
+}
+.tarjeta h2{
+    color: #1d1d1d;
+    font-size: 50px;
+    background-color: #f5f5f5;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.tarjeta a{
+    color: black;
+    font-size: 18px;
+}
+.tarjeta p{
+    color: black;
+    font-size: 18px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+.divButtonPlansPricing{
+    height: auto;
+    padding: 10px 0px;
+    background-color: #f5f5f5;
+    border-radius: 7px;
+}
+#plansButtonAzul{
+    background-color: #263247;
+}
+#plansButtonRosado{
+    background: linear-gradient(90deg, #eb66ab, #f41586);
+}
+.tarjeta button{
+    width: 45%;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+}
+#svgX{
+    color: #263247;
+}
+#svgChulo2{
+    color: #263247;
+}
+#svgStar2{
+    color: #263247;
+}
+
+/* FOOTER */
+footer{
+    height: auto;
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+footer p{
+    font-size: 17px;
+    color: #434343;
+    margin: 0px;
+}
+footer span{
+    color: #f41486;
+}
+footer svg{
+    color: #434343;
+}
+.divFooterSocial{
+    display: flex;
+    gap: 50px;
+}
